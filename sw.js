@@ -1,4 +1,4 @@
-var CACHE = 'ausgaben-v1';
+var CACHE = 'ausgaben-v3';
 var DATEIEN = ['./', './index.html', './icon-180.png'];
 
 self.addEventListener('install', function (e) {

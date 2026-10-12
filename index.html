@@ -21,7 +21,7 @@ h1{font-size:28px;margin:0}
 .menue{position:absolute;right:0;top:54px;z-index:1;min-width:210px;border-radius:14px;overflow:hidden;
   background:rgba(255,255,255,.88);-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);box-shadow:0 8px 30px rgba(0,0,0,.18)}
 .menue[hidden]{display:none}
-.menue button{display:block;width:100%;background:none;border:0;border-top:.5px solid rgba(60,60,67,.29);text-align:left;font:inherit;color:#000;padding:13px 16px}
+.menue button{display:flex;justify-content:space-between;align-items:center;width:100%;background:none;border:0;border-top:.5px solid rgba(60,60,67,.29);text-align:left;font:inherit;color:#000;padding:13px 16px}
 .menue button:first-child{border-top:0}
 .menue button:active{background:rgba(60,60,67,.12)}
 form{background:var(--card);border-radius:16px;padding:16px;display:grid;gap:14px}
@@ -39,8 +39,8 @@ input{text-align:center;width:100%;font:inherit;color:var(--text);background:var
     <h1>Ausgaben</h1>
     <button class="mehr" id="mehr" type="button" aria-label="Menü" aria-haspopup="true">⋯</button>
     <div class="menue" id="menue" hidden>
-      <button id="export" type="button">Exportieren</button>
-      <button type="reset" form="form" id="zurueck">Zurücksetzen</button>
+      <button id="export" type="button"><span>Exportieren</span><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15V3"/><path d="M8.5 6.5 12 3l3.5 3.5"/><path d="M8 10H7a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7a2 2 0 0 0-2-2h-1"/></svg></button>
+      <button type="reset" form="form" id="zurueck"><span>Zurücksetzen</span><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16"/><path d="M9 7V4.5h6V7"/><path d="M6.5 7l1 13h9l1-13"/><path d="M10 11v6M14 11v6"/></svg></button>
     </div>
   </header>
   <form id="form" autocomplete="off">
